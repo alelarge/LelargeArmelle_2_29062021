@@ -45,13 +45,16 @@ body {
 }
 
 h1 {
-  font-size: 16px;
+  font-size: 20px;
   font-weight: bold;
+  margin-left: 20px;
 }
 
 h2 {
-  font-size: 14px;
+  font-size: 18px;
   font-weight: normal;
+  font-weight: bold;
+  margin-left: 20px;
 }
 
 h3 {
@@ -150,6 +153,7 @@ main {
   padding-right: 2 px;
   padding-top: 2 px;
 }
+
 .accommodations-item-horizontal header {
   background-position: center;
   background-size: cover;
@@ -182,7 +186,11 @@ main {
   border-radius: 40px 40px 40px 40px;
   padding: 5px;
 }
-
+aside h2 .fas.fa-chart-line {
+  display: flex;
+  justify-content: start;
+  text-align: right;
+}
 /**
  * Footer
  */
@@ -203,4 +211,37 @@ footer {
 .flex div ul {
   margin: 0;
   padding: 0;
+}
+
+/**
+ * search-result activities
+ */
+.search-result .activities {
+}
+
+.search-result__title {
+}
+
+.search-result__list {
+}
+
+.search-result__item {
+}
+
+.search-result__item--large {
+}
+
+.search-result__item--medium {
+}
+
+.search-result__item--small {
+}
+
+.search-result__item__header {
+}
+
+.search-result__item__bottom {
+}
+
+.search-result__item__bottom h4 {
 }
