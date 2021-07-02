@@ -186,11 +186,7 @@ main {
   border-radius: 40px 40px 40px 40px;
   padding: 5px;
 }
-aside h2 .fas.fa-chart-line {
-  display: flex;
-  justify-content: start;
-  text-align: right;
-}
+
 /**
  * Footer
  */
@@ -211,6 +207,14 @@ footer {
 .flex div ul {
   margin: 0;
   padding: 0;
+}
+
+.flexcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 /**
