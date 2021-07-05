@@ -22,24 +22,56 @@
   </header>
   <main>
     <section class="search">
-      <h1>Trouvez votre hébergement de rêve</h1>
-      <h2>Filtres</h2>
-      <button type="reset"><input type="reset" value="Economique"></button>
-      <button type="reset"><input type="reset" value="Familial"></button>
-      <button type="reset"><input type="reset" value="Romantique"></button>
-      <button type="reset"><input type="reset" value="Animaux autorisés"></button>
-      <h2>En plein centre ville ou en pleine nature</h2>
-      <span></span>
+      <h2>Trouvez votre hébergement pour des vacances de rêve</h2>
+      <p>En plein centre ville ou en pleine nature<p>
+      <span>
 
+      <i class="fas fa-map-marker-alt"></i>
      <input type="text" placeholder="Marseille, France">
      <button>Rechercher</button> 
-     <h2>Plus de 500 logements sont disponibles dans cette ville</h2>
-    </section>
+     
+      </span>
 
+    <div class="filtres">
+      <div class="filter-list">
+        <h2>Filtres</h2>
+
+        <div class="filter-btn">
+          <span class="filter-btn__icon">
+            <i class="fas fa-money-bill-wave"></i>
+          </span>
+          <span class="filter-btn__label">Economique</span>
+        </div>
+      
+        <div class="filter-btn">
+          <span class="filter-btn__icon">
+            <i class="fas fa-child"></i>
+          </span>
+          <span class="filter-btn__label">Familial</span>
+        </div>
+
+        <div class="filter-btn">
+          <span class="filter-btn__icon">
+            <i class="fas fa-heart"></i>
+          </span>
+          <span class="filter-btn__label">Romantique</span>
+        </div>
+
+        <div class="filter-btn">
+          <span class="filter-btn__icon">
+            <i class="fas fa-dog"></i>
+          </span>
+          <span class="filter-btn__label">Animaux autorisés</span>
+        </div>
+      </div>
+    </div>
+
+    <p>Plus de 500 logements sont disponibles dans cette ville</p>
+    
     <section id="accommodations" class="accommodations flex">
       <div class="search-results">
         
-        <h1>Hébergements à Marseille</h1>
+        <h2>Hébergements à Marseille</h2>
         
         <div class="flex">
           <div class="accommodations-item">
@@ -59,7 +91,7 @@
           </div>
 
           <div class="accommodations-item">
-            <header style="background-image: url(assets/febrian-zakaria-M6S1WvfW68A-unsplash.jpg);">
+            <header style="background-image: url(assets/fred-kleber-gTbaxaVLvsg-unsplash.jpg);">
             </header>
             <div class='bottom'>
               <h4>Hôtel du port</h4>
@@ -142,12 +174,6 @@
       </div>
 
       <aside>
-        <!--
-          Mettre le h2 et le i au même niveau dans un nouveau parent
-          puis utiliser les flexbox pour placer le h2 à gauche et le i à doite
-        -->
-        
-        
         <div class="flexcontainer">
           <div class="itemcenter">Les plus populaires</div>
           <div class="fas fa-chart-line"></div>
