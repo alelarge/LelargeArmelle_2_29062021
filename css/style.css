@@ -1,4 +1,6 @@
+/*
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
+*/
 
 body {
   margin: 0px;
@@ -116,6 +118,50 @@ img {
 main {
   margin-right: 50px;
   margin-left: 50px;
+}
+
+.search__form {
+  display: flex;
+}
+
+.search__form__icon {
+  background-color: #f2f2f2;
+  color: #000000;
+  cursor: pointer;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 0px;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+}
+
+.search__form input {
+  font-weight: bold;
+  position: relative;
+  border-color: #f2f2f2;
+  border-style: solid;
+  border-right: none;
+  border-width: 1px;
+  width: 150px;
+}
+
+.search__form button {
+  background-color: #0065fc;
+  color: white;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 50px;
+  border-style: none;
+  width: 100px;
+}
+
+.search .fas.fa-map-marker-alt {
+  border-width: 10px;
+  border-weight: 10px;
 }
 
 .accommodations-item {
