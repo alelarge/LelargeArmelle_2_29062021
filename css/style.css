@@ -158,11 +158,27 @@ main {
 
 .search .fas.fa-map-marker-alt {
   border-width: 10px;
-  border-weight: 10px;
 }
 
-.fas.fa-info-circle p {
-  margin-right: 10px;
+.filter-info__icon {
+  bottom: 2px;
+  position: relative;
+  color: #0065fc;
+  display: inline-block;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 24px;
+  vertical-align: middle;
+  border: 1px solid #f2f2f2;
+  padding: 0px;
+}
+
+.filter-info__icon .fas.fa-info {
+  position: relative;
+  font-size: 14px;
+  color: #0564f6;
 }
 
 .fa-cog {
@@ -222,9 +238,9 @@ main {
 }
 
 .accommodations-item-horizontal .bottom {
-  padding-left: 2 px;
-  padding-right: 2 px;
-  padding-top: 2 px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
 }
 
 .accommodations-item-horizontal header {
