@@ -1,52 +1,8 @@
-/*
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300;400;700&display=swap');
-*/
 
 body {
   margin: 0px;
   font-family: 'Raleway', sans-serif;
-}
-
-/**
- * Header
- */
-
-.main-header {
-  display: flex;
-  padding-left: 50px;
-  padding-right: 50px;
-  padding-top: 50px;
-  margin-bottom: 50px;
-}
-
-.main-header .logo {
-  margin-right: auto;
-}
-
-.main-header .logo img {
-}
-
-.main-header nav {
-  margin-left: auto;
-}
-
-.main-header nav .menu {
-  margin: 0px;
-  padding: 0px;
-}
-
-.main-header nav .menu li {
-  display: inline-flex;
-  padding: 15px 10px 15px 10px;
-}
-
-.main-header nav .menu li a {
-  color: black;
-  text-decoration: none;
-}
-
-.main-header nav .menu li:hover a {
-  color: #0064fa;
 }
 
 .fas .fa-map-marker-alt {
@@ -54,6 +10,7 @@ body {
   padding-left: 20px;
   padding-right: 20px;
 }
+
 h1 {
   font-size: 21px;
   color: black;
@@ -108,6 +65,67 @@ img {
   height: 45px;
 }
 
+.fa-cog {
+  color: blue;
+}
+
+.stars {
+  color: #0564f6;
+  font-size: 12px;
+}
+
+.stars .fa-star-grey {
+  color: grey;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+/**
+ * Header
+ */
+
+.main-header {
+  display: flex;
+  padding-left: 50px;
+  padding-right: 50px;
+  padding-top: 50px;
+  margin-bottom: 50px;
+}
+
+.main-header .logo {
+  margin-right: auto;
+}
+
+.main-header .logo img {
+}
+
+.main-header nav {
+  margin-left: auto;
+}
+
+.main-header nav .menu {
+  margin: 0px;
+  padding: 0px;
+}
+
+.main-header nav .menu li {
+  display: inline-flex;
+  padding: 15px 10px 15px 10px;
+}
+
+.main-header nav .menu li a {
+  color: black;
+  text-decoration: none;
+}
+
+.main-header nav .menu li:hover a {
+  color: #0064fa;
+}
+
 /**
  * Main
  */
@@ -117,7 +135,7 @@ main {
   margin-left: 50px;
 }
 
-.search__form {
+.search .search__form {
   display: flex;
 }
 
@@ -160,7 +178,7 @@ main {
   border-width: 10px;
 }
 
-.filter-info__icon {
+.search .filter-info__icon {
   bottom: 2px;
   position: relative;
   color: #0065fc;
@@ -175,18 +193,73 @@ main {
   padding: 0px;
 }
 
-.filter-info__icon .fas.fa-info {
+.search .filter-info__icon .fas.fa-info {
   position: relative;
   font-size: 14px;
   color: #0564f6;
 }
 
-.fa-cog {
-  color: blue;
+.search .filter-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+  align-content: center;
+  align-items: center;
+  margin-top: 20px;
 }
 
-.accommodations-item {
-  border-radius: 40px 40px 40px 40px;
+.search .filter-btn {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+  justify-content: center;
+  height: 47px;
+  border-radius: 50px;
+}
+
+.search .filter-btn:hover .filter-btn__label {
+  background-color: #0065fc;
+  color: #fff;
+  cursor: pointer;
+}
+
+.search .filter-btn__icon {
+  left: 40px;
+  bottom: 3px;
+  position: relative;
+  background-color: #deebff;
+  color: #0065fc;
+  cursor: pointer;
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  text-align: center;
+  line-height: 50px;
+  vertical-align: middle;
+  padding: 0px;
+}
+
+.search .filter-btn__label {
+  margin-right: 15px;
+  border: 2px solid #f2f2f2;
+  border-radius: 30px 25px 25px 30px;
+  font-weight: bold;
+  align-self: center;
+  justify-content: center;
+  height: 47px;
+  width: auto;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-top: 15px;
+  padding-bottom: 12px;
+  padding-left: 45px;
+  padding-right: 12px;
+}
+
+.accommodations .accommodations-item {
+  border-radius: 20px;
   border: 5px solid #fff;
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
   background-color: white;
@@ -194,7 +267,7 @@ main {
   margin-bottom: 20px;
 }
 
-.accommodations-item .bottom {
+.accommodations .accommodations-item .bottom {
   padding-left: 10px;
   padding-right: 10px;
   padding-top: 10px;
@@ -215,41 +288,46 @@ main {
 }
 
 .accommodations-item-horizontal {
-  min-width: 250px;
-  height: 150px;
-  border-radius: 40px 40px 40px 40px;
+  height: 140px;
+  border-radius: 20px;
   border: 5px solid #fff;
   box-shadow: 0px 0px 10px 0px rgb(0 0 0 / 15%);
   background-color: white;
   overflow: hidden;
   margin-bottom: 30px;
+  display: flex;
+  box-sizing: content-box;
+  position: relative;
 }
 
 .accommodations aside .accommodations-item-horizontal:last-child {
   margin-bottom: 0px;
 }
 
+.accommodations-item-horizontal .stars {
+  position: absolute;
+  bottom: 0px;
+  margin-bottom: 10px;
+}
+
 .accommodations-item-horizontal h4,
 .accommodations-item p {
-  margin-top: 15px;
-  margin-bottom: 15px;
-  background-position: right;
+  margin-top: 0px;
+  margin-bottom: 12px;
 }
 
 .accommodations-item-horizontal .bottom {
   padding-left: 20px;
   padding-right: 20px;
-  padding-top: 20px;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 .accommodations-item-horizontal header {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  display: inline-block;
-  float: left;
-  height: 197px;
-  width: 110px;
+  min-width: 125px;
 }
 
 .accommodations .search-results .accommodations-list {
@@ -257,19 +335,19 @@ main {
   grid-template-columns: 31% 31% 31%;
 }
 
-.stars {
-  color: blue;
-}
-
-.stars .fa-star-grey {
-  color: grey;
-}
-
 .accommodations {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+}
+
+.accommodations aside .flexcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin: 15px;
+  font-weight: bold;
+  font-size: 18px;
 }
 
 .accommodations h2 {
@@ -283,7 +361,7 @@ main {
   flex-basis: 100%;
   flex: 1;
   background-color: #f2f2f2;
-  border-radius: 40px 40px 40px 40px;
+  border-radius: 20px;
   padding: 40px;
 }
 
@@ -292,109 +370,12 @@ main {
   margin-right: 40px;
 }
 
-.search h2 {
-  margin-top: 0px;
+.accommodations h2.search-result__title {
   font-size: 21px;
-}
-
-.filter h2 {
-  display: flex;
-  align-self: center;
-  justify-content: center;
-  position: center;
-  padding-left: 20px;
-  padding-right: 60px;
-  height: 47px;
-  margin-left: 40px;
-}
-
-.filter-list {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: flex-start;
-  align-content: center;
-  align-items: center;
-  margin-top: 20px;
-}
-
-.filter-btn {
-  text-decoration: none;
-  color: black;
-  font-size: 16px;
-  justify-content: center;
-  height: 47px;
-  border-radius: 50px;
-}
-
-.filter-btn:hover .filter-btn__label {
-  background-color: #0065fc;
-  color: #fff;
-  cursor: pointer;
-}
-
-.filter-btn__icon {
-  left: 40px;
-  bottom: 3px;
-  position: relative;
-  background-color: #deebff;
-  color: #0065fc;
-  cursor: pointer;
-  display: inline-block;
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  text-align: center;
-  line-height: 50px;
-  vertical-align: middle;
-  padding: 0px;
-}
-
-.filter-btn__label {
-  margin-right: 15px;
-  border: 2px solid #f2f2f2;
-  border-radius: 30px 25px 25px 30px;
   font-weight: bold;
-  align-self: center;
-  justify-content: center;
-  height: 47px;
-  width: auto;
-  margin-left: 0px;
-  margin-right: 0px;
-  padding-top: 15px;
-  padding-bottom: 12px;
-  padding-left: 45px;
-  padding-right: 12px;
-}
-
-/**
- * Footer
- */
-
-footer {
-  background-color: #f2f2f2;
-  padding-top: 20px;
-  padding-bottom: 20px;
-  margin-top: 40px;
-}
-
-.flex {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: space-between;
-}
-
-.flex div ul {
-  margin: 0;
-  padding: 0;
-}
-
-.flexcontainer {
-  display: flex;
-  justify-content: space-between;
-  margin: 15px;
-  font-weight: bold;
-  font-size: 18px;
+  margin-top: 60px;
+  margin-bottom: 26px;
 }
 
 /**
@@ -452,4 +433,20 @@ footer {
 .search-result__item__bottom h4 {
   margin: 0px;
   font-weight: bold;
+}
+
+/**
+ * Footer
+ */
+
+footer {
+  background-color: #f2f2f2;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  margin-top: 40px;
+}
+
+footer.flex div ul {
+  margin: 0;
+  padding: 0;
 }
