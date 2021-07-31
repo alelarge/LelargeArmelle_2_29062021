@@ -126,13 +126,27 @@ img {
   color: #0064fa;
 }
 
+@media (max-width: 780px) {
+  .main-header {
+    display: block;
+  }
+
+  .main-header #subscribe-btn {
+    position: absolute;
+    right: 20px;
+    top: 35px;
+  }
+}
+
 /**
  * Main
  */
 
-main {
-  margin-right: 50px;
-  margin-left: 50px;
+@media (min-width: 780px) {
+  main {
+    margin-right: 50px;
+    margin-left: 50px;
+  }
 }
 
 .search .search__form {
@@ -216,6 +230,7 @@ main {
   justify-content: center;
   height: 47px;
   border-radius: 50px;
+  margin-bottom: 20px;
 }
 
 .search .filter-btn:hover .filter-btn__label {
@@ -361,8 +376,14 @@ main {
   flex-basis: 100%;
   flex: 1;
   background-color: #f2f2f2;
-  border-radius: 20px;
   padding: 40px;
+}
+
+@media (min-width: 780px) {
+  .accommodations .search-results,
+  .accommodations aside {
+    border-radius: 20px;
+  }
 }
 
 .accommodations .search-results {
@@ -433,6 +454,12 @@ main {
 .search-result__item__bottom h4 {
   margin: 0px;
   font-weight: bold;
+}
+
+@media (max-width: 780px) {
+  .search-result__list {
+    display: block;
+  }
 }
 
 /**
