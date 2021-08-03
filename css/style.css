@@ -350,11 +350,23 @@ img {
   grid-template-columns: 31% 31% 31%;
 }
 
+@media (max-width: 780px) {
+  .accommodations .search-results .accommodations-list {
+    grid-template-columns: 100%;
+  }
+}
+
 .accommodations {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
+}
+
+@media (max-width: 1270px) {
+  .accommodations {
+    flex-direction: column;
+  }
 }
 
 .accommodations aside .flexcontainer {
@@ -379,6 +391,13 @@ img {
   padding: 40px;
 }
 
+@media (max-width: 1270px) {
+  .accommodations .search-results,
+  .accommodations aside {
+    padding-bottom: 0px;
+  }
+}
+
 @media (min-width: 780px) {
   .accommodations .search-results,
   .accommodations aside {
@@ -389,6 +408,12 @@ img {
 .accommodations .search-results {
   flex: 2;
   margin-right: 40px;
+}
+
+@media (max-width: 1270px) {
+  .accommodations .search-results {
+    margin-right: 0px;
+  }
 }
 
 .accommodations h2.search-result__title {
