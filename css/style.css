@@ -96,12 +96,12 @@ img {
   display: flex;
   padding-left: 50px;
   padding-right: 50px;
-  padding-top: 50px;
   margin-bottom: 50px;
 }
 
 .main-header .logo {
   margin-right: auto;
+  padding-top: 30px;
 }
 
 .main-header .logo img {
@@ -118,11 +118,19 @@ img {
 
 .main-header nav .menu li {
   display: inline-flex;
-  padding: 15px 10px 15px 10px;
+  padding: 50px 10px 15px 10px;
 }
 
 .main-header nav .menu li a {
   text-decoration: none;
+}
+
+.main-header nav .menu li.active {
+  border-top: 2px solid #0064fa;
+}
+
+.main-header nav .menu li.active a {
+  color: #0064fa;
 }
 
 .main-header nav .menu li:hover a {
@@ -137,16 +145,38 @@ img {
 @media (max-width: 780px) {
   .main-header {
     display: block;
-    padding-left: 15px;
-    padding-right: 15px;
-    padding-top: 30px;
+    padding-left: 0px;
+    padding-right: 0px;
     margin-bottom: 25px;
+  }
+
+  .main-header .logo {
+    padding-left: 20px;
+    padding-right: 20px;
   }
 
   .main-header #subscribe-btn {
     position: absolute;
     right: 20px;
-    top: 35px;
+    top: 47px;
+    padding-top: 0px;
+  }
+
+  .main-header nav .menu {
+    display: flex;
+    justify-content: center;
+  }
+
+  .main-header nav .menu li {
+    padding-top: 30px;
+    flex: 50%;
+    text-align: center;
+    display: list-item;
+  }
+
+  .main-header nav .menu li.active {
+    border-top: none;
+    border-bottom: 2px solid #0064fa;
   }
 }
 
